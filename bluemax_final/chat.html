@@ -1,0 +1,26 @@
+
+<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>BlueMax — Chat</title><link rel="stylesheet" href="styles.css"></head><body>
+  <div class="header-wrap"><div><div class="logo">BlueMax</div><div class="title">Chat</div></div></div>
+  <main class="container"><div class="left-col">
+    <section class="card">
+      <h2>Public Chat</h2>
+      <div id="chatStatus" class="small"></div>
+      <div id="chatArea" class="chat-area"></div>
+      <form id="chatForm">
+        <input id="chatInput" placeholder="Say something..." style="width:80%;padding:8px;border-radius:8px;border:1px solid rgba(255,255,255,0.06);margin-right:8px">
+        <button class="btn" style="background:var(--accent-dark);padding:8px 12px;border-radius:8px">Send</button>
+      </form>
+    </section>
+  </div></main>
+  <div class="sidebar" role="menu" aria-label="Quick actions">
+    <button class="icon-btn" id="homeBtn" title="Home">🏠</button>
+    <button class="icon-btn" id="gamesBtn" title="Games">🎮</button>
+    <button class="icon-btn" id="annBtn" title="Announcements">📣</button>
+    <button class="icon-btn" id="aboutBtn" title="About">ℹ️</button>
+    <button class="icon-btn" id="settingsBtn" title="Settings">⚙️</button>
+  </div>
+<script src="config/firebase-config.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+<script src="scripts.js"></script>
+</body></html>

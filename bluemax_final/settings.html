@@ -1,0 +1,23 @@
+
+<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>BlueMax — Settings</title><link rel="stylesheet" href="styles.css"></head><body>
+  <div class="header-wrap"><div><div class="logo">BlueMax</div><div class="title">Settings</div></div></div>
+  <main class="container"><div class="left-col">
+    <section class="card">
+      <h2>Appearance</h2>
+      <div class="settings-row small">
+        <label>Theme: <select id="themeToggle"><option value="dark">Dark</option><option value="light">Light</option></select></label>
+        <label>Font: <select id="fontSelect"><option value="small">Small</option><option value="medium">Medium</option><option value="large">Large</option></select></label>
+        <label>Accent: <select id="accentSelect"><option value="dark">Dark Blue</option><option value="light">Light Blue</option></select></label>
+      </div>
+    </section>
+  </div></main>
+  <div class="sidebar" role="menu" aria-label="Quick actions">
+    <button class="icon-btn" id="homeBtn" title="Home">🏠</button>
+    <button class="icon-btn" id="gamesBtn" title="Games">🎮</button>
+    <button class="icon-btn" id="annBtn" title="Announcements">📣</button>
+    <button class="icon-btn" id="aboutBtn" title="About">ℹ️</button>
+    <button class="icon-btn" id="settingsBtn" title="Settings">⚙️</button>
+  </div>
+<script src="config/firebase-config.js"></script>
+<script src="scripts.js"></script>
+</body></html>

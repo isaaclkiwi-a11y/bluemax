@@ -1,0 +1,49 @@
+
+:root{
+  --bg-dark:#071019;
+  --panel-dark:#061217;
+  --muted:#94a3b8;
+  --accent-dark:#0a4d8c; /* deep navy */
+  --accent-light:#4fa3ff; /* soft bright blue */
+  --sidebar:#0d2730;
+  --text:#e6eef6;
+}
+[data-theme="light"]{
+  --bg-dark: #f5f9ff;
+  --panel-dark: #ffffff;
+  --muted: #445569;
+  --text: #0b2340;
+}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;color:var(--text);background:linear-gradient(180deg,var(--bg-dark), #031216)}
+.header-wrap{width:100%;display:flex;justify-content:center;align-items:center;padding:48px 16px 16px;position:relative}
+.logo{font-size:40px;font-weight:800;letter-spacing:2px;font-family: 'Segoe UI', sans-serif; background: linear-gradient(90deg,var(--accent-dark), var(--accent-light)); -webkit-background-clip:text; color:transparent; display:inline-block}
+.title{font-size:36px;letter-spacing:1px;margin:6px 0 0;font-weight:700;text-align:center}
+.container{width:100%;max-width:1100px;padding:18px;margin-top:18px;display:flex;gap:18px}
+.left-col{flex:1}
+.card{background:linear-gradient(180deg,rgba(255,255,255,0.01), rgba(255,255,255,0.006));padding:14px;border-radius:12px;box-shadow:0 8px 30px rgba(2,6,23,.6);border:1px solid rgba(255,255,255,0.03)}
+.small{font-size:13px;color:var(--muted)}
+
+/* Right vertical sidebar */
+.sidebar{position:fixed;right:18px;top:50%;transform:translateY(-50%);background:var(--sidebar);padding:12px;border-radius:14px;display:flex;flex-direction:column;gap:12px;box-shadow:0 10px 30px rgba(0,0,0,0.6);border:1px solid rgba(255,255,255,0.03)}
+.icon-btn{width:56px;height:56px;border-radius:12px;background:transparent;border:0;display:flex;align-items:center;justify-content:center;cursor:pointer;color:var(--text);opacity:0.95;font-size:20px}
+.icon-btn:hover{transform:translateY(-3px);opacity:1}
+
+/* games grid */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px;margin-top:12px}
+.game-card{border-radius:10px;overflow:hidden;background:var(--panel-dark);cursor:pointer;border:1px solid rgba(255,255,255,0.03)}
+.game-cover{height:140px;background:#02111a;display:flex;align-items:center;justify-content:center;color:var(--muted);font-weight:700}
+.game-meta{padding:10px}
+
+/* announcement inline */
+.ann-inline{margin-top:12px;padding:10px;border-radius:8px;background:rgba(255,255,255,0.01);color:var(--muted)}
+
+/* chat */
+.chat-area{height:360px;overflow:auto;padding:10px;border-radius:8px;background:rgba(0,0,0,0.15);margin-bottom:8px}
+.chat-msg{padding:6px 8px;border-radius:8px;margin-bottom:6px;background:rgba(255,255,255,0.02)}
+
+/* settings */
+.settings-row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+
+/* responsive */
+@media (max-width:900px){.logo{font-size:28px}.icon-btn{width:48px;height:48px}}

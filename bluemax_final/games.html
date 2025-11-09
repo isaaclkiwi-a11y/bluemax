@@ -1,0 +1,22 @@
+
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>BlueMax — Games</title><link rel="stylesheet" href="styles.css"></head>
+<body>
+  <div class="header-wrap"><div><div class="logo">BlueMax</div><div class="title">Games</div></div></div>
+  <main class="container"><div class="left-col">
+    <section class="card"><div id="gamesList" class="grid"></div></section>
+  </div></main>
+  <div class="sidebar" role="menu" aria-label="Quick actions">
+    <button class="icon-btn" id="homeBtn" title="Home">🏠</button>
+    <button class="icon-btn" id="gamesBtn" title="Games">🎮</button>
+    <button class="icon-btn" id="annBtn" title="Announcements">📣</button>
+    <button class="icon-btn" id="aboutBtn" title="About">ℹ️</button>
+    <button class="icon-btn" id="settingsBtn" title="Settings">⚙️</button>
+  </div>
+<script src="config/firebase-config.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+<script src="scripts.js"></script>
+</body>
+</html>
